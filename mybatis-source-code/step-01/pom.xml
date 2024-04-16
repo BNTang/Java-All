@@ -22,7 +22,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>2.0.9.graal</version>
+            <version>1.2.75</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.dom4j/dom4j -->
         <dependency>
@@ -34,7 +34,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.13.2</version>
+            <version>4.7</version>
             <scope>test</scope>
         </dependency>
         <!-- LOGGING begin -->
@@ -51,7 +51,7 @@
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>1.4.14</version>
+            <version>1.0.9</version>
             <exclusions>
                 <exclusion>
                     <artifactId>slf4j-api</artifactId>
