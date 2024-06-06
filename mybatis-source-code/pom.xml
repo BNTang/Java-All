@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>step-01</module>
+        <module>step-02</module>
     </modules>
 
     <description>
