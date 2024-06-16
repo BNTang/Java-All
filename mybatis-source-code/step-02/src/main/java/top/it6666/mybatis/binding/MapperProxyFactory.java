@@ -1,5 +1,7 @@
 package top.it6666.mybatis.binding;
 
+import top.it6666.mybatis.session.SqlSession;
+
 import java.lang.reflect.Proxy;
 import java.util.Map;
 
@@ -9,14 +11,15 @@ import java.util.Map;
  * @author BNTang
  */
 public class MapperProxyFactory<T> {
-    private final Class<?> mapperInterface;
+    private final Class<T> mapperInterface;
 
-    public MapperProxyFactory(Class<?> mapperInterface) {
+    public MapperProxyFactory(Class<T> mapperInterface) {
         this.mapperInterface = mapperInterface;
     }
 
-    public T newInstance(Map<String, String> sqlSession) {
-        final MapperProxy<T> mapperProxy = (MapperProxy<T>) new MapperProxy<>(sqlSession, mapperInterface);
+    @SuppressWarnings("unchecked")
+    public T newInstance(SqlSession sqlSession) {
+        final MapperProxy<T> mapperProxy = new MapperProxy<>(sqlSession, mapperInterface);
         return (T) Proxy.newProxyInstance(mapperInterface.getClassLoader(), new Class[]{mapperInterface}, mapperProxy);
     }
 }
