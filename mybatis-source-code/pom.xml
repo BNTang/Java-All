@@ -14,7 +14,6 @@
     <modules>
         <module>step-01</module>
         <module>step-02</module>
-        <module>step-03</module>
     </modules>
 
     <description>
