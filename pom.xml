@@ -11,6 +11,7 @@
     <modules>
         <module>java-infrastructural</module>
         <module>mybatis-source-code</module>
+        <module>word-table-incorporation</module>
     </modules>
 
     <properties>

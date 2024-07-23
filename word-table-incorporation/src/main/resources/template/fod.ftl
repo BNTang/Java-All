@@ -1,0 +1,20 @@
+<xml>
+    <table>
+        <tr>
+            <th>项目</th>
+            <th>序号</th>
+            <th>种类</th>
+            <th>数量</th>
+            <th>危害性</th>
+        </tr>
+        <#list fodData.items as item>
+            <tr>
+                <td>${fodData.project}</td>
+                <td>${item.serialNumber}</td>
+                <td>${item.type}</td>
+                <td>${item.quantity}</td>
+                <td>${item.hazard}</td>
+            </tr>
+        </#list>
+    </table>
+</xml>
