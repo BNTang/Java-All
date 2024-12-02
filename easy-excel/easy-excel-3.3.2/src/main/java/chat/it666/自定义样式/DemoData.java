@@ -1,15 +1,15 @@
-package chat.it666.自定义样式.one;
+package chat.it666.自定义样式;
 
 import com.alibaba.excel.annotation.ExcelIgnore;
 import com.alibaba.excel.annotation.ExcelProperty;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.Date;
 
-@Getter
-@Setter
+/**
+ * @author 30315
+ */
+@Data
 @EqualsAndHashCode
 public class DemoData {
     @ExcelProperty("字符串标题")

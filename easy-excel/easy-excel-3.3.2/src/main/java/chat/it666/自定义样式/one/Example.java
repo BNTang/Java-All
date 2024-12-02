@@ -1,5 +1,6 @@
 package chat.it666.自定义样式.one;
 
+import chat.it666.自定义样式.DemoData;
 import com.alibaba.excel.EasyExcel;
 import com.alibaba.excel.util.ListUtils;
 import com.alibaba.excel.write.metadata.style.WriteCellStyle;
@@ -22,7 +23,7 @@ public class Example {
         // 方法1 使用已有的策略 推荐
         // HorizontalCellStyleStrategy 每一行的样式都一样 或者隔行一样
         // AbstractVerticalCellStyleStrategy 每一列的样式都一样 需要自己回调每一页
-        String fileName = "example" + System.currentTimeMillis() + ".xlsx";
+        String fileName = "exampleOne" + System.currentTimeMillis() + ".xlsx";
         // 头的策略
         WriteCellStyle headWriteCellStyle = new WriteCellStyle();
         // 背景设置为红色
