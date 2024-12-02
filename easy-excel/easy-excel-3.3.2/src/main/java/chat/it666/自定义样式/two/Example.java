@@ -86,6 +86,11 @@ public class Example {
                             writeCellStyle.setFillPatternType(FillPatternType.SOLID_FOREGROUND);
 
                             // 这样样式就设置好了 后面有个FillStyleCellWriteHandler 默认会将 WriteCellStyle 设置到 cell里面去 所以可以不用管了
+
+                            // 设置字体颜色为红色
+//                            WriteFont writeFont = new WriteFont();
+//                            writeFont.setColor(IndexedColors.WHITE.getIndex());
+//                            writeCellStyle.setWriteFont(writeFont);
                         }
                     }
                 }).sheet("模板")
