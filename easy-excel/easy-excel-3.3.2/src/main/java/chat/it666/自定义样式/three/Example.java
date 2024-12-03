@@ -10,6 +10,8 @@ import com.alibaba.excel.write.handler.context.CellWriteHandlerContext;
 import com.alibaba.excel.write.metadata.style.WriteCellStyle;
 import org.apache.poi.ss.usermodel.*;
 
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 
@@ -56,10 +58,15 @@ public class Example {
         for (int i = 0; i < 10; i++) {
             DemoData data = new DemoData();
             data.setString("字符串" + i);
-            data.setDate(new Date());
-            data.setDoubleData(0.56);
+            data.setDate(LocalDateTime.now());
+            data.setDoubleData(new BigDecimal("0.7"));
             list.add(data);
         }
+        DemoData data = new DemoData();
+        data.setString("other");
+        data.setDate(LocalDateTime.now());
+        data.setDoubleData(new BigDecimal("25.7"));
+        list.add(data);
         return list;
     }
 }

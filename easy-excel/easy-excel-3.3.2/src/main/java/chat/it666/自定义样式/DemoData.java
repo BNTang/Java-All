@@ -2,9 +2,11 @@ package chat.it666.自定义样式;
 
 import com.alibaba.excel.annotation.ExcelIgnore;
 import com.alibaba.excel.annotation.ExcelProperty;
-import lombok.*;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
-import java.util.Date;
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
 
 /**
  * @author 30315
@@ -15,9 +17,9 @@ public class DemoData {
     @ExcelProperty("字符串标题")
     private String string;
     @ExcelProperty("日期标题")
-    private Date date;
+    private LocalDateTime date;
     @ExcelProperty("数字标题")
-    private Double doubleData;
+    private BigDecimal doubleData;
     /**
      * 忽略这个字段
      */
